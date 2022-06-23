@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Document</title>
 </head>
+<style>
+    button{
+        background-color: black; 
+        border-radius: 50px; 
+        width: 150px; 
+        height: 50px; 
+        color: white; 
+        margin: 200px auto; 
+        margin-left: 550px; 
+        font-size: larger; 
+        font-weight: bolder; 
+    }
+    button:hover{
+        transform: scale(0.9);
+        color: blue;
+    }
+</style>
 <body>
-  <h1>Zuri on JavaScript</h1>
     <button>Click Here</button>
+    <script>
+        const firstName = "Chizaram"
+        const lastName = "Ezugwu"
+        const middleName = "Darius-Mary"
+        const country = "Nigeria"
+        var height = "160cm"
+        const fullName = `${firstName} ${middleName} ${lastName}`;
+
+        const button = document.querySelector('button');
+        button.addEventListener('click', showMyName)
+
+        function showMyName(){
+            alert('My name is ' + fullName);
+            alert('I am ' + height + ' tall');
+            alert('I am from ' + country);
+        }
+    </script>
 </body>
 </html>
