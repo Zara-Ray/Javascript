@@ -34,12 +34,14 @@
         const fullName = `${firstName} ${middleName} ${lastName}`;
 
         const button = document.querySelector('button');
-        button.addEventListener('click', showMyName)
+        button.addEventListener('click', showMyName);
 
         function showMyName(){
+            alert('Hello!')
             alert('My name is ' + fullName);
             alert('I am ' + height + ' tall');
             alert('I am from ' + country);
+            alert('Thank you!')
         }
     </script>
 </body>
